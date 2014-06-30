@@ -1,0 +1,15 @@
+$TTL    2h
+@       IN      SOA     ns1.cloyne.net. hostmaster.cloyne.net. (
+                        1       ; Serial
+                        30m     ; Refresh
+                        1h      ; Retry
+                        2w      ; Expire
+                        2h      ; Negative Cache TTL
+                        )
+@       IN      NS      ns1.cloyne.net.
+@       IN      NS      ns2.cloyne.net.
+@       IN      MX      10 mail.cloyne.net.
+@       IN      A       50.0.115.228
+;
+www     IN      CNAME   server2.cloyne.net.
+hack    IN      CNAME   server2.cloyne.net.
