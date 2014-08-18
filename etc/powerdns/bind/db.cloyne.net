@@ -1,6 +1,6 @@
 $TTL    2h
 @       IN      SOA     ns1.cloyne.net. hostmaster.cloyne.net. (
-                        2       ; Serial
+                        3       ; Serial
                         30m     ; Refresh
                         1h      ; Retry
                         2w      ; Expire
@@ -20,3 +20,4 @@ ns2     IN      CNAME   server1
 ;
 www     IN      CNAME   server2
 hack    IN      CNAME   server2
+printer1	IN	A	192.168.0.100
