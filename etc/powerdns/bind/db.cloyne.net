@@ -18,6 +18,7 @@ mail    IN      CNAME   server2
 ns1     IN      CNAME   server2
 ns2     IN      CNAME   server1
 ;
+printer1	IN	A	192.168.0.100
+;
 www     IN      CNAME   server2
 hack    IN      CNAME   server2
-printer1	IN	A	192.168.0.100
