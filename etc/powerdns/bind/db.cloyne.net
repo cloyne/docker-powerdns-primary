@@ -1,6 +1,6 @@
 $TTL    2h
 @       IN      SOA     ns1.cloyne.net. hostmaster.cloyne.net. (
-                        3       ; Serial
+                        4       ; Serial
                         30m     ; Refresh
                         1h      ; Retry
                         2w      ; Expire
@@ -14,9 +14,9 @@ $TTL    2h
 router	IN	A	50.0.115.226
 server1 IN      A       50.0.115.227
 server2 IN      A       50.0.115.228
-mail    IN      CNAME   server2
-ns1     IN      CNAME   server2
-ns2     IN      CNAME   server1
+mail    IN      A	50.0.115.228 ; server2, cannot use CNAME
+ns1     IN      A	50.0.115.228 ; server2, cannot use CNAME
+ns2     IN      A	50.0.115.227 ; server1, cannot use CNAME
 ;
 printer1	IN	A	192.168.0.100
 ;
