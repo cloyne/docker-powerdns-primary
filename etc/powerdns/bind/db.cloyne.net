@@ -1,6 +1,6 @@
 $TTL    2h
 @       IN      SOA     ns1.cloyne.net. hostmaster.cloyne.net. (
-                        9       ; Serial
+                        10      ; Serial
                         30m     ; Refresh
                         1h      ; Retry
                         2w      ; Expire
@@ -23,4 +23,3 @@ maintenance	IN	A	10.20.32.80
 printer1	IN	A	10.20.32.90
 ;
 www     IN      CNAME   server2
-hack    IN      CNAME   server2

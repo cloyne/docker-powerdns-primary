@@ -1,6 +1,6 @@
 $TTL    2h
 @       IN      SOA     ns1.cloyne.net. hostmaster.cloyne.net. (
-                        4       ; Serial
+                        5       ; Serial
                         30m     ; Refresh
                         1h      ; Retry
                         2w      ; Expire
@@ -12,7 +12,6 @@ $TTL    2h
 @       IN      A       50.0.115.228
 ;
 www     IN      CNAME   server2.cloyne.net.
-hack    IN      CNAME   server2.cloyne.net.
 workshift IN	CNAME	server2.cloyne.net.
 council	IN	CNAME	server2.cloyne.net.
 maintenance IN	CNAME	server2.cloyne.net.
