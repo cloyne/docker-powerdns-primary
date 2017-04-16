@@ -1,15 +1,16 @@
 $TTL    2h
-@       IN      SOA     ns1.cloyne.net. hostmaster.cloyne.net. (
-                        2       ; Serial
+@       IN      SOA     ns1.cloyne.org. hostmaster.cloyne.org. (
+                        3       ; Serial
                         30m     ; Refresh
                         1h      ; Retry
                         2w      ; Expire
                         2h      ; Negative Cache TTL
                         )
-@       IN      NS      ns1.cloyne.net.
-@       IN      NS      ns2.cloyne.net.
+@       IN      NS      ns1.cloyne.org.
+@       IN      NS      ns2.cloyne.org.
 ;
-41	IN	PTR	he.cloyne.net.
-42	IN	PTR	router.cloyne.net.
-43	IN	PTR	server1.cloyne.net.
-44	IN	PTR	server2.cloyne.net.
+41	IN	PTR	he.cloyne.org.
+42	IN	PTR	router.cloyne.org.
+43	IN	PTR	server1.cloyne.org.
+44	IN	PTR	server2.cloyne.org.
+45	IN	PTR	server3.cloyne.org.
