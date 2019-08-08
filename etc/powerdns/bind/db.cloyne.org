@@ -1,36 +1,36 @@
 $TTL    2h
-@       IN      SOA     ns1.cloyne.org. hostmaster.cloyne.org. (
-                        11       ; Serial
-                        30m     ; Refresh
-                        1h      ; Retry
-                        2w      ; Expire
-                        2h      ; Negative Cache TTL
-                        )
-@       IN      NS      ns1.cloyne.org.
-@       IN      NS      ns2.cloyne.org.
-@       IN      MX      10 mail.cloyne.org.
-@       IN      A       64.62.133.44
+@           IN    SOA   ns1.cloyne.org. hostmaster.cloyne.org. (
+                          11      ; Serial
+                          30m     ; Refresh
+                          1h      ; Retry
+                          2w      ; Expire
+                          2h      ; Negative Cache TTL
+                          )
+@           IN    NS      ns1.cloyne.org.
+@           IN    NS      ns2.cloyne.org.
+@           IN    MX      10  mail.cloyne.org.
+@           IN    A       64.62.133.44
 ;
-he	    IN	    A	      64.62.133.41
-router	IN	    A	      64.62.133.42
-server1 IN      A       64.62.133.43
-server2 IN      A       64.62.133.44
-server3 IN      A       64.62.133.45
-mail    IN      A	      64.62.133.44 ; server2, cannot use CNAME
-ns1     IN      A	      64.62.133.44 ; server2, cannot use CNAME
-ns2     IN      A	      64.62.133.43 ; server1, cannot use CNAME
+he          IN    A       64.62.133.41
+router      IN    A       64.62.133.42
+server1     IN    A       64.62.133.43
+server2     IN    A       64.62.133.44
+server3     IN    A       64.62.133.45
+mail        IN    A       64.62.133.44 ; server2, cannot use CNAME
+ns1         IN    A       64.62.133.44 ; server2, cannot use CNAME
+ns2         IN    A       64.62.133.43 ; server1, cannot use CNAME
 ;
-printer1	IN	  A       10.20.32.90
-printer2	IN	  A       10.20.32.92
+printer1    IN    A       10.20.32.90
+printer2    IN    A       10.20.32.92
 ;
-files		IN	    CNAME   server3
-packages	IN    CNAME   server3
-chat	IN    CNAME   server3
-mesh		IN	    CNAME   server3
-ldap		IN	    CNAME   server2
-oldworkshift		IN	    CNAME   server2
-radio		IN	    CNAME   server2
-www     IN      CNAME   server2
-maintenance IN	CNAME	  server2
+files       IN    CNAME   server3
+packages    IN    CNAME   server3
+chat        IN    CNAME   server3
+mesh        IN    CNAME   server3
+ldap        IN    CNAME   server2
+oldworkshift IN    CNAME   server2
+radio       IN    CNAME   server2
+www         IN    CNAME   server2
+maintenance IN    CNAME   server2
 ;
-council	IN      A	      169.229.219.154
+council     IN     A      169.229.219.154
