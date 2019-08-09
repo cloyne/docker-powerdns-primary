@@ -8,6 +8,14 @@ To add a DNS record (e.g. a subdomain):
 7. On server2, if it doesn't start properly, exec into the docker container
    (`docker exec -ti dns script -q -c "/bin/bash" /dev/null`)
 8. edit `/etc/powerdns/pdns.conf` and change the line `launch=` to
-   `launch=bind`.
+   `launch=bind`. Then add the line
+   `bind-config=/etc/powerdns/bindbackend.conf`.
+9. Run `pdns_control reload`. Now `pdns_control list-zones` should show
+
+    40-29.133.62.64.in-addr.arpa.
+    cloyne.net.
+    cloyne.org.
+    All zonecount:3
+10. Wait patiently for changes to propogate.
 
 TODO: automate this.
