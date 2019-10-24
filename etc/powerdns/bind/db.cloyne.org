@@ -1,6 +1,6 @@
 $TTL    2h
 @           IN    SOA   ns1.cloyne.org. hostmaster.cloyne.org. (
-                          13      ; Serial
+                          17      ; Serial
                           30m     ; Refresh
                           1h      ; Retry
                           2w      ; Expire
@@ -9,6 +9,7 @@ $TTL    2h
 @           IN    NS      ns1.cloyne.org.
 @           IN    NS      ns2.cloyne.org.
 @           IN    MX      10  mail.cloyne.org.
+@           IN    TXT     "v=spf1 mx a ptr ip4:64.62.133.40/29 ?all"
 @           IN    A       64.62.133.44
 ;
 he          IN    A       64.62.133.41
@@ -17,6 +18,7 @@ server1     IN    A       64.62.133.43
 server2     IN    A       64.62.133.44
 server3     IN    A       64.62.133.45
 mail        IN    A       64.62.133.44 ; server2, cannot use CNAME
+mail        IN    TXT     "google-site-verification=yS8SP4ghjK4HsuSI0ufKwp84Uy16QOgXC40rVGJhmTE"
 ns1         IN    A       64.62.133.44 ; server2, cannot use CNAME
 ns2         IN    A       64.62.133.43 ; server1, cannot use CNAME
 ;
