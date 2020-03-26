@@ -1,6 +1,6 @@
 $TTL    2h
 @           IN    SOA   ns1.cloyne.org. hostmaster.cloyne.org. (
-                          18      ; Serial
+                          19      ; Serial
                           30m     ; Refresh
                           1h      ; Retry
                           2w      ; Expire
@@ -30,6 +30,7 @@ files       IN    CNAME   server3
 packages    IN    CNAME   server3
 chat        IN    CNAME   server3
 mesh        IN    CNAME   server3
+minecraft   IN    CNAME   server3
 ldap        IN    CNAME   server2
 radio       IN    CNAME   server2
 www         IN    CNAME   server2
