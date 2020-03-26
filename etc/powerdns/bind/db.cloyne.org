@@ -1,6 +1,6 @@
 $TTL    2h
 @           IN    SOA   ns1.cloyne.org. hostmaster.cloyne.org. (
-                          17      ; Serial
+                          18      ; Serial
                           30m     ; Refresh
                           1h      ; Retry
                           2w      ; Expire
@@ -10,6 +10,7 @@ $TTL    2h
 @           IN    NS      ns2.cloyne.org.
 @           IN    MX      10  mail.cloyne.org.
 @           IN    TXT     "v=spf1 mx a ptr ip4:64.62.133.40/29 ?all"
+@           IN    TXT     "google-site-verification=FJLZq7zE7n3Z8UQD3mM1ubRm9NeacYaGQMtQChs4MXA"
 @           IN    A       64.62.133.44
 ;
 he          IN    A       64.62.133.41

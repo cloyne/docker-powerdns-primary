@@ -1,4 +1,8 @@
 To add a DNS record (e.g. a subdomain):
+0. Make sure the version on the server matches the version in this repository.
+   If the version on the server is newer, update this repository to match
+   first. Check `/etc/powerdns/bind/db.cloyne.org` in the `dns` container on
+   server2.
 1. Open `etc/powerdns/bind/db.cloyne.org` in an editor
 2. Increment the Serial number
 3. Add the line
