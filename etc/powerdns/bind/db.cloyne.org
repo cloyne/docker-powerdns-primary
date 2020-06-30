@@ -19,7 +19,6 @@ server1     IN    A       64.62.133.43
 server2     IN    A       64.62.133.44
 server3     IN    A       64.62.133.45
 server4     IN    A       192.81.216.6
-sandbox     IN    A       192.81.216.6
 mail        IN    A       64.62.133.44 ; server2, cannot use CNAME
 mail        IN    TXT     "google-site-verification=yS8SP4ghjK4HsuSI0ufKwp84Uy16QOgXC40rVGJhmTE"
 ns1         IN    A       64.62.133.44 ; server2, cannot use CNAME
@@ -39,6 +38,7 @@ www         IN    CNAME   server2
 maintenance IN    CNAME   server2
 lists       IN    CNAME   server2
 vote        IN    CNAME   server2
+sandbox     IN    CNAME   server4
 ;
 council     IN     A      169.229.219.154
 status      IN    CNAME   stats.uptimerobot.com.
