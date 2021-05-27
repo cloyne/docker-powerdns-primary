@@ -1,6 +1,6 @@
 $TTL    2h
 @           IN    SOA   ns1.cloyne.org. hostmaster.cloyne.org. (
-                          21      ; Serial
+                          22      ; Serial
                           30m     ; Refresh
                           1h      ; Retry
                           2w      ; Expire
@@ -40,5 +40,5 @@ lists       IN    CNAME   server2
 vote        IN    CNAME   server2
 sandbox     IN    CNAME   server4
 ;
-council     IN     A      169.229.219.154
+council     IN    CNAME   cloyne.peermind.org.
 status      IN    CNAME   stats.uptimerobot.com.
